@@ -1,12 +1,13 @@
-import "./App.css";
-import HelloWorld from "./components/HelloWorld";
-import Pessoa from "./components/Pessoa";
-import SayMyName from "./components/SayMyName";
+import HelloWorld from "./components/HelloWorld/HelloWorld";
+import Pessoa from "./components/Pessoa/Pessoa";
+import SayMyName from "./components/SayMyName/SayMyName";
 
 function App() {
   const nome = "Jolyne";
   return (
     <section>
+      <HelloWorld/>
+      <h1>Testando styled components</h1>
       <SayMyName nome="Jackson" />
       <SayMyName nome="Johnny" />
       <SayMyName nome={nome} />
