@@ -1,27 +1,22 @@
 import "./App.css";
 import HelloWorld from "./components/HelloWorld";
+import Pessoa from "./components/Pessoa";
+import SayMyName from "./components/SayMyName";
 
 function App() {
-  const name = "Jackson";
-
-  const newName = name.toUpperCase();
-
- function sum(a,b) {
-  return a + b
- }
-
- const url = "https://picsum.photos/200/300"
-
+  const nome = "Jolyne";
   return (
     <section>
-      <h1>Ola React!</h1>
-      <p>Isso e somente um teste</p>
-      <h2>Ola, {newName}</h2>
-      <p>Soma: {sum(1,2)}</p>
-      <img src={url} alt="Imagem aleatoria" />
-      <HelloWorld/>
+      <SayMyName nome="Jackson" />
+      <SayMyName nome="Johnny" />
+      <SayMyName nome={nome} />
+      <Pessoa
+        nome="Jackson"
+        idade="19"
+        profissao="Programador"
+        foto="http://lorempixel.com.br/500/400/?2"
+      />
     </section>
-    
   );
 }
 
