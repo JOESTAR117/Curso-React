@@ -4,16 +4,16 @@ export const GlobalStyled = createGlobalStyle`
 body{
   padding: 50px;
   padding-bottom: 500px;
-  background-color: #221e1eee;
+  background-color: #ffffffed;
   display: flex;
   align-items: center;
   justify-content: center;
 
   h1{
-    color: #ffffff;
+    color: #000000;
   }
   p{
-    background-color: #999;
+    background-color: #4b3e3e;
     padding: 10px;
   }
 }
