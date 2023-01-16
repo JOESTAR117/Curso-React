@@ -1,12 +1,10 @@
-import Eventos from "./components/Evento/Eventos";
-import Form from "./components/Form/Form";
+import Conditional from "./components/Conditional/Conditional";
 
 function App() {
   return (
     <section>
-      <h1>Testando Eventos</h1>
-      <Eventos  />
-      <Form/>
+      <h1>Renderização conditional</h1>
+      <Conditional />
     </section>
   );
 }
