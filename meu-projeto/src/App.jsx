@@ -1,10 +1,16 @@
-import Conditional from "./components/Conditional/Conditional";
+import List2 from "./components/List/List2";
+
 
 function App() {
+
+
+  const meusItens = ['React', 'Vue', 'Angular']
+
   return (
     <section>
-      <h1>Renderização conditional</h1>
-      <Conditional />
+      <h1>Renderização de listas</h1>
+      <List2 itens={meusItens} />
+      <List2 itens={[]} />
     </section>
   );
 }

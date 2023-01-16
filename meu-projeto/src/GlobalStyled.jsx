@@ -13,8 +13,9 @@ body{
     color: #000000;
   }
   p{
-    background-color: #4b3e3e;
+    background-color: #cc3232;
     padding: 10px;
+    color: #ffffffed;
   }
 }
 
