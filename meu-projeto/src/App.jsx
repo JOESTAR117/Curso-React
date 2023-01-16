@@ -1,17 +1,19 @@
-import List2 from "./components/List/List2";
+import { useState } from "react";
+import Saudacao from "./components/Saudacao/Saudacao";
+import SeuNome from "./components/SeuNome/SeuNome";
+
 
 
 function App() {
 
-
-  const meusItens = ['React', 'Vue', 'Angular']
+  const [nome,setNome] = useState('')
 
   return (
-    <section>
-      <h1>Renderização de listas</h1>
-      <List2 itens={meusItens} />
-      <List2 itens={[]} />
-    </section>
+    <div>
+      <h1>State lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome = {nome} />
+    </div>
   );
 }
 
